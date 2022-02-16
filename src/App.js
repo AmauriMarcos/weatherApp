@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./styles/app.module.css";
 import Geocode from "react-geocode";
-import {
-  FaTint,
-  FaWind
-} from "react-icons/fa";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState("");
@@ -18,7 +14,7 @@ function App() {
   const [calendarDay, setCalendarDay] = useState("");
   const [currentDay, setCurrentDay] = useState("");
   const [currentTime, setCurrentTime] = useState([]);
-  const [timezoneOffset, setTimezoneOffset] = useState("");
+  
 
   var weekday = new Array(7);
   weekday[0] = "Sun";
@@ -101,7 +97,7 @@ function App() {
 
         const dailyData = res.data.daily;
         const dailyWithoutCurrentDay = dailyData.slice(1, -1);
-        setTimezoneOffset(res.data.timezone_offset);
+   
         setDaily(dailyWithoutCurrentDay);
         setCurrentWeather(res.data.current);
         console.log(currentWeather)
