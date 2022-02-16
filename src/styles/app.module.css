@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .cityName{
@@ -146,4 +147,113 @@ label{
 .dailyIcon{
     width: 80px;
     height: 80px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .blur{
+        padding: 2rem 1.5rem;
+        height: 100%;
+     /*    overflow: hidden; */
+    }
+
+    .weatherInfo{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        flex-direction: column;
+    }
+
+    .weatherIcon{
+        margin-top: 5rem;
+      
+    }
+
+    .weatherIcon h2{
+        font-size: 8rem;
+    }
+
+    .form{
+        width: 60%;
+     
+        display: flex;
+    }
+
+    .currentDay{
+        margin: 2rem 0;
+        flex-direction: column;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    .button{
+        align-self: flex-end;
+    }
+
+   
+    .cityName{
+        font-size: 1rem;
+    }
+
+    .time{
+        font-weight: 100;
+        font-size: 1.4rem;
+    }
+
+    label{
+        margin-left: 2rem;
+        font-size: .75rem;
+    }
+
+    label p{
+        margin-left: .5rem;
+        margin-bottom: .3rem;
+    }
+
+
+    .restOfTheWeek{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .eachDayOfTheWeek{
+        padding:  .5rem;
+        border: none;
+        border: 1px solid rgb(204, 204, 204);
+        width: 170px;
+        margin: 0 auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

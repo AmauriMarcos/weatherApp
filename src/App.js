@@ -150,9 +150,9 @@ function App() {
           ) : (
             <h1 className={styles.cityName}>Niš</h1>
           )}
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className={styles.form}>
             <label>
-              Check the weather in
+              <p>Check the weather in</p>
               <input
                 value={mySearch}
                 onChange={handleSearch}
